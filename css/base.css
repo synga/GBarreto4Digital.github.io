@@ -143,6 +143,7 @@ ul.dropdown-menu li a{
 #procurar {
   color: white !important;
   background-color: #2c2c2c;
+  border-bottom: white 2px solid !important;
 }
 
 #botao-procurar{
@@ -164,20 +165,24 @@ ul.dropdown-menu li a{
 }
 
 #group-procurar {
-  border-bottom: white 2px solid !important;
+  border-bottom: none;
 }
 
-.form-inline .fa-search{
+.fa-search{
   color: white;
   font-size: 1.2em;
   text-align: left;
+}
+
+.input-group-btn{
+  font-size: 1em;
 }
 
 #carrinho {
   color: white;
 }
 
-#carrinho .fa-shopping-cart {
+.fa-shopping-cart {
   color: red;
   font-size: 2.5em;
   float: left;

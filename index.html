@@ -3,16 +3,15 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <link rel="stylesheet" href="imports/bootstrap/css/bootstrap-theme.css">
-    <link rel="stylesheet" href="imports/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="imports/bootstrap/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="imports/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="imports/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/md.css" media="(min-width: 992px) and (max-width: 1199px)">
     <link rel="stylesheet" href="css/sm.css" media="(min-width: 768px) and (max-width: 991px)">
     <link rel="stylesheet" href="css/xs.css" media="(max-width: 767px)">
 
     <script src="imports/jquery-3.1.1.min.js"></script>
-    <script src="imports/bootstrap/js/bootstrap.js"></script>
+    <script src="imports/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <title>QDCars</title>
   </head>
@@ -117,15 +116,17 @@
               <div class="row">
                 <div class="col-xs-9 col-sm-9 col-md-6 col-lg-7 col-md-offset-1">
                   <form class="form-inline form-procurar">
-                    <div id="group-procurar" class="form-group">
+                    <div id="group-procurar" class="form-group input-group">
                       <input type="text" class="form-control" id="procurar" placeholder="Estou procurando por...">
+                      <span class="input-group-btn">
+                        <button id="botao-procurar"><i class="fa fa-search"></i></button>
+                      </span>
                     </div>
-                    <button id="botao-procurar"><i class="fa fa-search"></i></button>
                   </form>
                 </div>
+
                 <div id="carrinho" class="col-xs-3 col-sm-3 col-md-5 col-lg-4">
-                  <i class="fa fa-shopping-cart"></i>
-                  <p>(99)<br>
+                  <i class="fa fa-shopping-cart"></i><p>(99)<br>
                     R$9.999,00</p>
                 </div>
               </div>
