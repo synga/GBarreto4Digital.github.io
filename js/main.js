@@ -1,9 +1,16 @@
-//VAI IMPEDIR EFEITO DE DRAG EM IMAGENS
+/*===========================
+JAVASCRIPT PARA MANIPUALÇAO DA PAGINA
+=============================*/
+
+
 $( document ).ready(function(){
+  //VAI IMPEDIR EFEITO DE DRAG EM IMAGENS
   var imagens = document.getElementsByTagName('img');
   for(var i = 0; i < imagens.length; i++){
     imagens[i].draggable = false;
   };
+  //RETIRA A BARRA DE SCROLL HORIZONTAL
+  document.documentElement.style.overflowX = 'hidden';
 });
 
 //VAI GARANTIR AS CONFIGURAÇÕES DA PAGINA AO INICIAR
