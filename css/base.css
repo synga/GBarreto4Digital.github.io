@@ -4,10 +4,22 @@
   MD: 992 ~ 1199
   SM: 768 ~ 991
   XS: <= 767
+
+  ESSA FOLHA DE CSS CONSISTE EM (ctrl+f com código da área de alteração):
+  - ALTERAÇÕES GERAIS [COD001]
+  - ALTERAÇÕES DE PADDING E MARGING [COD002]
+  - ALTERAÇÕES DE BARRA DE NAVEGAÇÃO [COD003]
+  - ALTERAÇÕES DE PRODUTOS [COD004]
+  - ALTERAÇÕES PARA NOVIDADES [COD005]
+  - ALTERAÇÕES PARA FOOTERS [COD006]
+
+  OUTRAS FOLHAS DE CSS NÃO ESTÃO ORGANIZADAS POIS CONTÉM ALTERAÇÕES MINIMAS
 ===================================*/
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
 
-/*APLICADO NA PAGINA INTEIRA*/
+/*===========================
+APLICADO NA PAGINA INTEIRA [COD001]
+=============================*/
 *{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -18,35 +30,6 @@
 a:visited {
   text-decoration: none;
 }
-
-/*SEÇÃO PARA PADDINGS E MARGINS*/
-.pd-tp-2{
-  padding-top: 2% !important;
-}
-.pd-lf-1 {
-  padding-left: 1% !important;
-}
-
-.pd-rt-1 {
-  padding-right: 1% !important;
-}
-
-.pd-lfrt-1 {
-  padding: 0 1% !important;
-}
-
-.mg-bt-1 {
-  margin-bottom: 1% !important;
-}
-
-.pd-bt-4{
-  padding-bottom: 4% !important;
-}
-
-.no-mg-bt {
-  margin-bottom: 0 !important;
-}
-/*FIM SEÇÃO PARA PADDINGS E MARGINS*/
 
 input[type='text'] {
   outline: none;
@@ -89,8 +72,57 @@ section.container-fluid {
   visibility: hidden;
 }
 
+.visualmente-escondido {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+.visualmente-escondido.focusable:active,
+.visualmente-escondido.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+}
+
+/*============================
+SEÇÃO PARA PADDINGS E MARGINS [COD002]
+==============================*/
+.pd-tp-2{
+  padding-top: 2% !important;
+}
+.pd-lf-1 {
+  padding-left: 1% !important;
+}
+
+.pd-rt-1 {
+  padding-right: 1% !important;
+}
+
+.pd-lfrt-1 {
+  padding: 0 1% !important;
+}
+
+.mg-bt-1 {
+  margin-bottom: 1% !important;
+}
+
+.pd-bt-4{
+  padding-bottom: 4% !important;
+}
+
+.no-mg-bt {
+  margin-bottom: 0 !important;
+}
+
 /*=========================
-BARRA DE NAVEGAÇÃO
+BARRA DE NAVEGAÇÃO [COD003]
 ===========================*/
 .navbar-custom {
   background-color: #2c2c2c;
@@ -213,7 +245,7 @@ ul.dropdown-menu li a{
 }
 
 /*=========================
-SEÇÃO DE CSS PARA PRODUTOS
+SEÇÃO DE CSS PARA PRODUTOS [COD004]
 ===========================*/
 .centerizado {
   text-align: center;
@@ -290,7 +322,7 @@ p.no-mg-bt {
 }
 
 /*==================
-SEÇÃO PARA NOVIDADES
+SEÇÃO PARA NOVIDADES [COD005]
 ====================*/
 .novidades {
   background-color: #e4e4e4;
@@ -346,7 +378,7 @@ SEÇÃO PARA NOVIDADES
 }
 
 /*======================
-SEÇÃO PARA OS FOOTERS
+SEÇÃO PARA OS FOOTERS [COD006]
 ========================*/
 
 .footer-info {
