@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="imports/bootstrap/css/bootstrap-theme.css">
+    <link rel="stylesheet" href="imports/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="imports/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/md.css" media="(min-width: 992px) and (max-width: 1199px)">
+    <link rel="stylesheet" href="css/sm.css" media="(min-width: 768px) and (max-width: 991px)">
+    <link rel="stylesheet" href="css/xs.css" media="(max-width: 767px)">
+
+    <script src="imports/jquery-3.1.1.min.js"></script>
+    <script src="imports/bootstrap/js/bootstrap.js"></script>
+    <script src="js/main.js"></script>
+    <title>QDCars</title>
+  </head>
+  <body>
+    <!-- BARRA DE NAVEGAÇÃO -->
+    <nav class="navbar navbar-custom navbar-static-top">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xs-3 col-sm-3 col-md-2 col-lg-2 welcome">
+            <p>Olá! Bem vindo!</p>
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-3 col-xs-offset-5 col-sm-offset-5 col-md-offset-6 col-lg-offset-7">
+            <div class="user-options">
+              <a href="#">Meus Pedidos</a>
+              <a href="#">Atendimento</a>
+            </div>
+          </div>
+        </div>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <div class="row">
+            <div class="col-xs-12 col-sm-9 col-md-5 col-lg-5">
+              <ul class="nav navbar-nav navbar-left">
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Lorem
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Ipsum</a></li>
+                      <li><a href="#">Dollor</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Ipsum
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Ipsum</a></li>
+                      <li><a href="#">Dollor</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu3" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Dollor
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu3">
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Ipsum</a></li>
+                      <li><a href="#">Dollor</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu4" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Sit
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu4">
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Ipsum</a></li>
+                      <li><a href="#">Dollor</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <div class="dropdown">
+                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu5" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                      Amet
+                      <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu5">
+                      <li><a href="#">Lorem</a></li>
+                      <li><a href="#">Ipsum</a></li>
+                      <li><a href="#">Dollor</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div id="navbar-logo" class="col-xs-12 col-sm-3 col-md-2 col-lg-2">
+              <img src="img/logo.png" alt="logo"/>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+              <div class="row">
+                <div class="col-xs-9 col-sm-9 col-md-6 col-lg-7 col-md-offset-1">
+                  <form class="form-inline form-procurar">
+                    <div id="group-procurar" class="form-group">
+                      <input type="text" class="form-control" id="procurar" placeholder="Estou procurando por...">
+                    </div>
+                    <button id="botao-procurar"><i class="fa fa-search"></i></button>
+                  </form>
+                </div>
+                <div id="carrinho" class="col-xs-3 col-sm-3 col-md-5 col-lg-4">
+                  <i class="fa fa-shopping-cart"></i>
+                  <p>(99)<br>
+                    R$9.999,00</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- HEADER CONTENDO A IMAGEM DO CARRO -->
+    <header class="container-fluid">
+      <div class="row" id="header-banner">
+        <div class="col-xs-12 col-sm-10 col-md-10 col-lg-10 col-sm-offset-1">
+          <img id="banner-img" src="img/header.jpg" alt="Carro_sei_la_qual" />
+        </div>
+      </div>
+
+      <div class="row" id="carros-smxs">
+        <div id="CarouselCarros" class="carousel slide" data-ride="carousel">
+          <!-- Indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#CarouselCarros" data-slide-to="0" class="active"></li>
+            <li data-target="#CarouselCarros" data-slide-to="1"></li>
+            <li data-target="#CarouselCarros" data-slide-to="2"></li>
+            <li data-target="#CarouselCarros" data-slide-to="3"></li>
+          </ol>
+
+          <!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="img-carousel" alt="roda_bmw_m3" src="img/bmw_m3.jpg" />
+            </div>
+            <div class="item">
+              <img class="img-carousel" alt="Carro_sei_la_qual" src="img/header.jpg" />
+            </div>
+            <div class="item">
+              <img class="img-carousel" alt="Lamborghini_Aventador" src="img/aventador_3.jpg" />
+            </div>
+            <div class="item">
+              <img class="img-carousel" alt="Camaro_ss" src="img/camaro-ss-i.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- SECTION PARA IMAGENS DE CARROS E RODAS -->
+    <section class="container-fluid">
+      <div id="carros-mdlg">
+        <div class="row">
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-sm-offset-1">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pd-rt-1">
+                <img class="img-responsive" alt="roda_bmw_m3" src="img/bmw_m3.jpg" />
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 pd-lf-1">
+                <img class="img-responsive" alt="Camaro_ss" src="img/camaro-ss-i.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row pd-tp-2">
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-sm-offset-1">
+            <div class="row">
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pd-rt-1">
+                <img class="img-responsive" alt="Lamborghini_Aventador" src="img/aventador_3.jpg" />
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pd-lfrt-1">
+                <img class="img-responsive" alt="Camaro_ss" src="img/camaro-ss-i.jpg" />
+              </div>
+              <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 pd-lf-1">
+                <img class="img-responsive" alt="roda_bmw_m3" src="img/bmw_m3.jpg" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+    <!-- SEÇÃO PARA PRODUTOS DE VENDA -->
+    <section class="container-fluid pd-bt-4">
+        <p class="divisor"></p>
+        <h2>Mais Desejados</h2>
+        <div class="row" id="produtos-mdlg">
+          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-sm-offset-1">
+            <!-- COMEÇAM OS PRODUTOS -->
+            <div class="row">
+
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <span class="badge produto-novo mg-bt-1"><i class="fa fa-star"></i> novo</span>
+                <span class=" badge frete-gratis mg-bt-1"><i class="fa fa-truck"></i> frete gratis</span>
+                <span class=" badge oferta"><i class="fa fa-comments"></i> oferta</span>
+                <img class="img-responsive" alt="player_cd" src="img/player.jpg" />
+                <h6 class="descricao">lorem ipsum dolor sit lorem ipsum dolor sit amet</h6>
+                <p class="no-mg-bt"><b class="preco-de">R$280,00</b> <b class="preco-oferta">R$190,00</b></p>
+                <p class="parcelas"><b>12x de R$66,00</b></p>
+                <div class="centerizado">
+                  <button class="btn-comprar"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <span class="badge produto-novo mg-bt-1"><i class="fa fa-star"></i> novo</span>
+                <span class=" badge frete-gratis mg-bt-1"><i class="fa fa-truck"></i> frete gratis</span>
+                <span class=" badge oferta"><i class="fa fa-comments"></i> oferta</span>
+                <img class="img-responsive" alt="player_cd" src="img/player.jpg" />
+                <h6 class="descricao">lorem ipsum dolor sit lorem ipsum dolor sit amet</h6>
+                <p class="no-mg-bt"><b class="preco-de">R$280,00</b> <b class="preco-oferta">R$190,00</b></p>
+                <p class="parcelas"><b>12x de R$66,00</b></p>
+                <div class="centerizado">
+                  <button class="btn-comprar"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <span class="badge produto-novo mg-bt-1"><i class="fa fa-star"></i> novo</span>
+                <span class=" badge frete-gratis mg-bt-1"><i class="fa fa-truck"></i> frete gratis</span>
+                <span class=" badge oferta"><i class="fa fa-comments"></i> oferta</span>
+                <img class="img-responsive" alt="player_cd" src="img/player.jpg" />
+                <h6 class="descricao">lorem ipsum dolor sit lorem ipsum dolor sit amet</h6>
+                <p class="no-mg-bt"><b class="preco-de">R$280,00</b> <b class="preco-oferta">R$190,00</b></p>
+                <p class="parcelas"><b>12x de R$66,00</b></p>
+                <div class="centerizado">
+                  <button class="btn-comprar"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+                <span class="badge produto-novo mg-bt-1"><i class="fa fa-star"></i> novo</span>
+                <span class=" badge frete-gratis mg-bt-1"><i class="fa fa-truck"></i> frete gratis</span>
+                <span class=" badge oferta"><i class="fa fa-comments"></i> oferta</span>
+                <img class="img-responsive" alt="player_cd" src="img/player.jpg" />
+                <h6 class="descricao">lorem ipsum dolor sit lorem ipsum dolor sit amet</h6>
+                <p class="no-mg-bt"><b class="preco-de">R$280,00</b> <b class="preco-oferta">R$190,00</b></p>
+                <p class="parcelas"><b>12x de R$66,00</b></p>
+                <div class="centerizado">
+                  <button class="btn-comprar"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="row" id="produtos-smxs">
+          <div id="CarouselProdutos" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#CarouselProdutos" data-slide-to="0" class="active"></li>
+              <li data-target="#CarouselProdutos" data-slide-to="1"></li>
+              <li data-target="#CarouselProdutos" data-slide-to="2"></li>
+              <li data-target="#CarouselProdutos" data-slide-to="3"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <span class="badge produto-novo mg-bt-1"><i class="fa fa-star"></i> novo</span>
+                <span class=" badge frete-gratis mg-bt-1"><i class="fa fa-truck"></i> frete gratis</span>
+                <span class=" badge oferta"><i class="fa fa-comments"></i> oferta</span>
+                <img class="img-carousel-p" alt="player_cd" src="img/player.jpg" />
+                <h6 class="descricao">lorem ipsum dolor sit lorem ipsum dolor sit amet</h6>
+                <p class="no-mg-bt"><b class="preco-de">R$280,00</b> <b class="preco-oferta">R$190,00</b></p>
+                <p class="parcelas"><b>12x de R$66,00</b></p>
+                <div class="centerizado">
+                  <button class="btn-comprar"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                </div>
+              </div>
+
+              <div class="item">
+                <span class="badge produto-novo mg-bt-1"><i class="fa fa-star"></i> novo</span>
+                <span class=" badge frete-gratis mg-bt-1"><i class="fa fa-truck"></i> frete gratis</span>
+                <span class=" badge oferta"><i class="fa fa-comments"></i> oferta</span>
+                <img class="img-carousel-p" alt="player_cd" src="img/player.jpg" />
+                <h6 class="descricao">lorem ipsum dolor sit lorem ipsum dolor sit amet</h6>
+                <p class="no-mg-bt"><b class="preco-de">R$280,00</b> <b class="preco-oferta">R$190,00</b></p>
+                <p class="parcelas"><b>12x de R$66,00</b></p>
+                <div class="centerizado">
+                  <button class="btn-comprar"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                </div>
+              </div>
+
+              <div class="item">
+                <span class="badge produto-novo mg-bt-1"><i class="fa fa-star"></i> novo</span>
+                <span class=" badge frete-gratis mg-bt-1"><i class="fa fa-truck"></i> frete gratis</span>
+                <span class=" badge oferta"><i class="fa fa-comments"></i> oferta</span>
+                <img class="img-carousel-p" alt="player_cd" src="img/player.jpg" />
+                <h6 class="descricao">lorem ipsum dolor sit lorem ipsum dolor sit amet</h6>
+                <p class="no-mg-bt"><b class="preco-de">R$280,00</b> <b class="preco-oferta">R$190,00</b></p>
+                <p class="parcelas"><b>12x de R$66,00</b></p>
+                <div class="centerizado">
+                  <button class="btn-comprar"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                </div>
+              </div>
+
+              <div class="item">
+                <span class="badge produto-novo mg-bt-1"><i class="fa fa-star"></i> novo</span>
+                <span class=" badge frete-gratis mg-bt-1"><i class="fa fa-truck"></i> frete gratis</span>
+                <span class=" badge oferta"><i class="fa fa-comments"></i> oferta</span>
+                <img class="img-carousel-p" alt="player_cd" src="img/player.jpg" />
+                <h6 class="descricao">lorem ipsum dolor sit lorem ipsum dolor sit amet</h6>
+                <p class="no-mg-bt"><b class="preco-de">R$280,00</b> <b class="preco-oferta">R$190,00</b></p>
+                <p class="parcelas"><b>12x de R$66,00</b></p>
+                <div class="centerizado">
+                  <button class="btn-comprar"><i class="fa fa-shopping-bag"></i> Comprar</button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control" href="#CarouselProdutos" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#CarouselProdutos" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+    <!-- SEÇÃO PARA NOVIDADES -->
+    <section class="novidades container-fluid">
+      <h2>Receba as Novidades</h2>
+      <div class="row">
+        <div class="col-xs-12 col-sm-8 col-md-2 col-lg-2 col-sm-offset-2">
+          <div class="text-center"><img src="img/banner_propaganda.JPG" alt="Anuncie_Aqui" /></div>
+        </div>
+        <div class="col-xs-8 col-sm-6 col-md-5 col-lg-5 col-xs-offset-2 col-sm-offset-3 col-md-offset-2">
+          <p>Receba novidades e ofertas com descontos exclusivos<br>diretamente no seu e-mail!</p>
+          <br>
+
+          <form class="form-inline">
+            <div class="row">
+              <div class="col-sm-8 col-md-8 col-lg-6">
+                <div class="form-group">
+                  <label for="email"><i class="fa fa-envelope"></i></label>
+                  <input type="text" class="form-control" id="email" placeholder="Digite seu e-mail">
+                </div>
+              </div>
+              <div class="col-sm-4 col-md-4 col-lg-4">
+                <div id="botao-enviar"><button type="submit" class="btn btn-default btn-send">OK</button></div>
+              </div>
+            </div>
+          </form>
+          <br>
+          <div id="redes-sociais">
+            <a href="#" class="fa fa-instagram icon-social"></a>
+            <a href="#" class="fa fa-facebook-f icon-social"></a>
+            <a href="#" class="fa fa-youtube icon-social"></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTERS -->
+    <footer>
+      <div class="row footer-info">
+        <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-0 col-md-offset-1">
+          <h4>Precisa de Ajuda?</h4>
+          <p><a href="#">Quem Somos</a></p>
+          <p><a href="#">Como Comprar</a></p>
+          <p><a href="#">Trocas e Devoluções</a></p>
+          <p><a href="#">Politica de Entrega</a></p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 text-center">
+          <img class="footer-logo" src="img/logo.png" alt="QDCars">
+          <br>
+          <a href="#">Quem Somos?</a>  <a href="#">Lojas Fisicas</a>  <a href="#">Seja um Revendedor</a>
+        </div>
+        <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-0 col-md-offset-0">
+          <address>
+            <h4>Atedimento</h4>
+            <p><a href="tel:01130543434">(11)3054-3434</a></p>
+            <p><a href="mailto:sac@email.com.br">sac@email.com.br</a></p>
+            <p>De 2° a 5°, das 9 ás 18:00h</p>
+            <p>Sexta-feira das 9 ás 17:00h</p>
+          </address>
+        </div>
+      </div>
+
+      <div class="row footer-pagamento">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 col-xs-offset-1 col-sm-offset-1">
+          <p>Pagamento</p>
+            <img src="img/pagamentos/visa.png" alt="visa" />
+            <img src="img/pagamentos/dinners.gif" alt="dinners" />
+            <img src="img/pagamentos/amex.png" alt="amex" />
+            <img src="img/pagamentos/boleto.png" alt="boleto" />
+            <img src="img/pagamentos/mastercard.png" alt="mastercard" />
+            <img src="img/pagamentos/hiperCard.png" alt="hipercard" />
+            <img src="img/pagamentos/moip.png" alt="moip" />
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+          <p>Compra 100% segura</p>
+            <img src="img/pagamentos/ebit.png" alt="ebit" />
+            <img src="img/pagamentos/certisign.jpg" alt="certisign" />
+            <img src="img/pagamentos/pci.png" alt="pci" />
+            <img src="img/pagamentos/clearsale.jpg" alt="clearsale" /></div>
+      </div>
+
+      <div class="row footer-responsavel">
+        <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-sm-offset-1">
+          <p>2013 - 2015 - Todos os direitos reservados. Razão Social Vestem - CNPJ 12.323.211/0001-44<br>
+          Avenida Henry Ford, 1.716. Parque da Mooca, São Paulo - SP - CEP:03109-000</p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2">
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

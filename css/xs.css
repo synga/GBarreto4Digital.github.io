@@ -1,0 +1,76 @@
+.user-options{
+  text-align: right;
+}
+
+.navbar-toggle .icon-bar{
+  background-color: black;
+}
+
+#botao-procurar {
+  position: absolute;
+  top: 7%;
+  left: 38%;
+}
+
+.img-carousel {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.img-carousel-p {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.right.carousel-control {
+  color: black;
+  background-image: none;
+}
+
+.left.carousel-control {
+  color: black;
+  background-image: none;
+}
+.novidades p {
+  text-align: center;
+}
+
+#redes-sociais {
+  text-align: center;
+}
+
+.fa-envelope {
+  display: none;
+}
+
+.btn-send {
+  margin: 0 auto !important;
+}
+
+.footer-info .col-md-offset-1 p {
+  float: left;
+  padding-right: 5%;
+}
+
+address p{
+  float: left;
+  padding-right: 5%;
+}
+
+address h4{
+  text-align: left;
+}
+
+.footer-logo {
+  margin-bottom: 2%;
+}
+
+.footer-pagamento p{
+  position: absolute;
+}
+
+.footer-pagamento img{
+  padding-top: 10%;
+}

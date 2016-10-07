@@ -1,0 +1,45 @@
+.user-options {
+  text-align: right;
+}
+
+.img-carousel {
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.img-carousel-p {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.right.carousel-control {
+  color: black;
+  background-image: none;
+}
+
+.left.carousel-control {
+  color: black;
+  background-image: none;
+}
+
+.novidades p {
+  text-align: center;
+}
+
+#redes-sociais {
+  text-align: center;
+}
+
+.footer-info a{
+  text-transform: uppercase;
+}
+
+.footer-pagamento p{
+  position: absolute;
+}
+
+.footer-pagamento img{
+  padding-top: 10%;
+}

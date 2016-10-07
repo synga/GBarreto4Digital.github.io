@@ -1,0 +1,416 @@
+/*=================================
+  ESQUEMA RESPONSIVO:
+  LG: >= 1200
+  MD: 992 ~ 1199
+  SM: 768 ~ 991
+  XS: <= 767
+===================================*/
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,900);
+
+/*APLICADO NA PAGINA INTEIRA*/
+*{
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+/*SEÇÃO PARA PADDINGS E MARGINS*/
+.pd-tp-2{
+  padding-top: 2% !important;
+}
+.pd-lf-1 {
+  padding-left: 1% !important;
+}
+
+.pd-rt-1 {
+  padding-right: 1% !important;
+}
+
+.pd-lfrt-1 {
+  padding: 0 1% !important;
+}
+
+.mg-bt-1 {
+  margin-bottom: 1% !important;
+}
+
+.pd-bt-4{
+  padding-bottom: 4% !important;
+}
+
+.no-mg-bt {
+  margin-bottom: 0 !important;
+}
+/*FIM SEÇÃO PARA PADDINGS E MARGINS*/
+
+input[type='text'] {
+  outline: none;
+  font-weight: bold;
+  border: none !important;
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+#banner-img{
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  opacity: 0.8;
+}
+
+h2 {
+  padding-bottom: 2%;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+section.container-fluid {
+  margin-top: 5%;
+}
+
+.divisor {
+  margin: 0 10% 0 10%;
+  border-top: #e4e4e4 2px solid;
+}
+
+.form-group {
+  border-bottom: black 2px solid;
+}
+
+.carousel-indicators li {
+  visibility: hidden;
+}
+
+/*=========================
+BARRA DE NAVEGAÇÃO
+===========================*/
+.navbar-custom {
+  background-color: #2c2c2c;
+  margin-bottom: 0;
+}
+
+.btn-default.dropdown-toggle {
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: none;
+}
+
+.btn-default:active:hover, .btn-default.active:hover, .open > .dropdown-toggle.btn-default:hover, .btn-default:active:focus, .btn-default.active:focus, .open > .dropdown-toggle.btn-default:focus, .btn-default:active.focus, .btn-default.active.focus, .open > .dropdown-toggle.btn-default.focus {
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: none;
+}
+
+ul.dropdown-menu {
+  background-color: #2c2c2c;
+  color: white;
+  border: none;
+  text-transform: uppercase;
+  box-shadow: none;
+}
+
+ul.dropdown-menu li a{
+  color: white;
+  border: none;
+  text-transform: uppercase;
+}
+
+.navbar-toggle {
+  background-color: white;
+  color: black;
+}
+
+.icon-bar {
+  color: black;
+}
+
+.navbar-toggle i{
+  color: black;
+}
+
+#procurar {
+  color: white !important;
+  background-color: #2c2c2c;
+}
+
+#botao-procurar{
+  background-color: inherit;
+  border: none;
+}
+
+#procurar::-webkit-input-placeholder, #procurar:-moz-placeholder, #procurar::-moz-placeholder, #procurar:-ms-input-placeholder{
+   color: white;
+}
+
+.navbar-left {
+  padding-top: 1%;
+}
+
+.form-procurar {
+  padding-right: 2%;
+  float: left;
+}
+
+#group-procurar {
+  border-bottom: white 2px solid !important;
+}
+
+.form-inline .fa-search{
+  color: white;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+#carrinho {
+  color: white;
+}
+
+#carrinho .fa-shopping-cart {
+  color: red;
+  font-size: 2.5em;
+  float: left;
+  padding-left: 10%;
+}
+#carrinho p {
+  float: right;
+}
+
+.welcome {
+  color: white;
+}
+
+.user-options {
+  float: right;
+}
+
+.user-options a, .user-options a:visited{
+  color: white;
+  text-decoration: none;
+}
+.user-options a:last-child {
+  padding-left: 5%;
+}
+.user-options a:hover{
+  color: red;
+  text-decoration: none;
+}
+
+/*=========================
+SEÇÃO DE CSS PARA PRODUTOS
+===========================*/
+.centerizado {
+  text-align: center;
+}
+
+.btn-comprar {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: #009200;
+  border: 1px solid #009200;
+  border-radius: 2px;
+  background-color: white;
+}
+
+.btn-comprar:hover {
+  color: white;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: #009200;
+}
+
+.badge {
+  border: none;
+  border-radius: 0;
+}
+
+.produto-novo {
+  z-index: 1;
+  float: left;
+  padding: 2%;
+  color: white;
+  background-color: black;
+}
+
+.frete-gratis {
+  z-index: 1;
+  float: right;
+  padding: 2%;
+  color: white;
+  background-color: #0082a7;
+}
+
+.oferta {
+  z-index: 1;
+  float: right;
+  clear: both;
+  padding: 2%;
+  color: white;
+  background-color: #de006f;
+}
+
+p.no-mg-bt {
+  text-align: center;
+}
+.preco-de {
+  text-align: center;
+  color: lightgray;
+  text-decoration: line-through;
+}
+
+.preco-oferta {
+  color: red;
+}
+
+.parcelas {
+  text-align: center;
+}
+
+.descricao {
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*==================
+SEÇÃO PARA NOVIDADES
+====================*/
+.novidades {
+  background-color: #e4e4e4;
+  padding: 1px 0 3% 0;
+}
+
+.novidades p {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.icon-social {
+  background-color: white;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 1.5em;
+  border-radius: 27px;
+  -moz-border-radius:27px;
+  -webkit-border-radius:27px;
+}
+
+.icon-social:hover{
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.btn-send{
+  margin-left: 5%;
+  color: white;
+  background-color: black;
+  width: 100px;
+  text-transform: uppercase;
+  text-indent: 2px;
+  border: 1px outset black !important;
+}
+
+#email {
+  background-color: #e4e4e4;
+}
+
+#email::-webkit-input-placeholder, #email:-moz-placeholder, #email::-moz-placeholder, #email:-ms-input-placeholder{
+   color: black;
+}
+
+/*======================
+SEÇÃO PARA OS FOOTERS
+========================*/
+
+.footer-info {
+  margin: 0;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: black;
+  color: white;
+}
+
+.footer-info a{
+  color: white;
+}
+
+.footer-info a:hover{
+  color: red;
+  text-decoration: none;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-center a{
+  margin-right: 3%;
+}
+
+.text-center a:last-child {
+  margin-right: 0;
+}
+
+.footer-info .col-md-offset-1 p{
+  margin: 0;
+}
+
+.footer-logo{
+  margin: 5% 0;
+}
+
+address {
+  text-align: right;
+}
+
+address p{
+  margin: 0;
+}
+
+.footer-pagamento{
+  padding: 2% 0;
+  margin: 0;
+  background-color: #e4e4e4;
+}
+
+.footer-pagamento p{
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 3%;
+}
+
+.footer-pagamento img{
+  width: 40px;
+  height: auto;
+}
+
+.footer-responsavel{
+  margin: 0;
+}
+
+.footer-responsavel p{
+  color: grey;
+}
